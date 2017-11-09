@@ -3,37 +3,37 @@ const app = "I don't do much."
 
 const drivers = ["Milo", "Otis", "Garfield"]
 
-function destructivelyAppendKitten(name){
+function destructivelyAppendDriver(name){
   drivers.push(name)
   return drivers
 }
 
-function destructivelyPrependKitten(name){
+function destructivelyPrependDriver(name){
   drivers.unshift(name)
   return drivers
 }
 
-function destructivelyRemoveLastKitten(){
+function destructivelyRemoveLastDriver(){
   drivers.pop()
   return drivers
 }
 
-function destructivelyRemoveFirstKitten(){
+function destructivelyRemoveFirstDriver(){
   drivers.shift()
 }
 
-function appendKitten(name){
+function appendDriver(name){
   return [...drivers, name]
 }
 
-function prependKitten(name){
+function prependDriver(name){
   return [name, ...drivers]
 }
 
-function removeLastKitten(){
+function removeLastDriver(){
   return drivers.slice(0,drivers.length-1)
 }
 
-function removeFirstKitten(){
+function removeFirstDriver(){
   return drivers.slice(1)
 }
