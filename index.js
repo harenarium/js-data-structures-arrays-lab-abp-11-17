@@ -1,39 +1,39 @@
 // Write your solution here!
 const app = "I don't do much."
 
-var driver = ["Milo", "Otis", "Garfield"]
+var drivers = ["Milo", "Otis", "Garfield"]
 
 function destructivelyAppendKitten(name){
-  driver.push(name)
-  return driver
+  drivers.push(name)
+  return drivers
 }
 
 function destructivelyPrependKitten(name){
-  driver.unshift(name)
-  return driver
+  drivers.unshift(name)
+  return drivers
 }
 
 function destructivelyRemoveLastKitten(){
-  driver.pop()
-  return driver
+  drivers.pop()
+  return drivers
 }
 
 function destructivelyRemoveFirstKitten(){
-  driver.shift()
+  drivers.shift()
 }
 
 function appendKitten(name){
-  return [...driver, name]
+  return [...drivers, name]
 }
 
 function prependKitten(name){
-  return [name, ...driver]
+  return [name, ...drivers]
 }
 
 function removeLastKitten(){
-  return driver.slice(0,driver.length-1)
+  return drivers.slice(0,drivers.length-1)
 }
 
 function removeFirstKitten(){
-  return driver.slice(1)
+  return drivers.slice(1)
 }
